@@ -45,7 +45,7 @@
                         </div>
                         <!-- End of Form -->
                         <!-- Form -->
-                        <div class="form-group mb-4">
+                        <div class="mb-3">
                             <label for="password">{{ __('Your Password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon2">
@@ -65,7 +65,7 @@
                         </div>
                         <!-- End of Form -->
                         <!-- Form -->
-                        <div class="form-group mb-4">
+                        <div class="mb-3">
                             <label for="password_confirmation">{{ __('Confirm Password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon3">

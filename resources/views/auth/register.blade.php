@@ -12,7 +12,7 @@
                         @csrf
                         
                         <!-- Form -->
-                        <div class="form-group mt-4 mb-4">
+                        <div class="mt-3 mb-3">
                             <label for="name">{{ __('Your Name') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon1">
@@ -27,7 +27,7 @@
                         <!-- End of Form -->
 
                         <!-- Form -->
-                        <div class="form-group mt-4 mb-4">
+                        <div class="mt-3 mb-3">
                             <label for="email">{{ __('Your Email') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon1">
@@ -46,7 +46,7 @@
                         </div>
                         <!-- End of Form -->
                         <!-- Form -->
-                        <div class="form-group mb-4">
+                        <div class="mb-3">
                             <label for="password">{{ __('Your Password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon2">
@@ -66,7 +66,7 @@
                         </div>
                         <!-- End of Form -->
                         <!-- Form -->
-                        <div class="form-group mb-4">
+                        <div class="mb-3">
                             <label for="password_confirmation">{{ __('Confirm Password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon3">

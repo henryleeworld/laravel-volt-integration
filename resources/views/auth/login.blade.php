@@ -11,7 +11,7 @@
                     <form class="mt-4" action="{{ route('login') }}" method="POST">
                         @csrf
                         <!-- Form -->
-                        <div class="form-group mb-4">
+                        <div class="mb-3">
                             <label for="email">{{ __('Your Email') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon1">
@@ -31,9 +31,9 @@
                             @enderror
                         </div>
                         <!-- End of Form -->
-                        <div class="form-group">
+                        <div class="mb-3">
                             <!-- Form -->
-                            <div class="form-group mb-4">
+                            <div class="mb-3">
                                 <label for="password">{{ __('Your Password') }}</label>
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon2">
