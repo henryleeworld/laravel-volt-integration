@@ -19,7 +19,7 @@
                                     <i class="fas fa-user-alt fa-fw"></i>
                                 </span>
                                 <input name="name" id="name" type="name" class="form-control"
-                                    placeholder="{{ __('Name') }}" value="{{ old('name') }}" autofocus required>
+                                    placeholder="{{ __('Name') }}" value="{{ old('name') }}" required autocomplete="name" autofocus>
                             </div>
 
                             @error('name') <div class="invalid-feedback"> {{ $message }} </div> @enderror
@@ -40,7 +40,7 @@
                                     </svg>
                                 </span>
                                 <input name="email" id="email" type="email" class="form-control"
-                                    placeholder="{{ __('Email') }}" value="{{ old('email') }}" autofocus required>
+                                    placeholder="{{ __('Email') }}" value="{{ old('email') }}" required autocomplete="email">
                             </div>
                             @error('email') <div class="invalid-feedback"> {{ $message }} </div> @enderror
                         </div>
@@ -67,7 +67,7 @@
                         <!-- End of Form -->
                         <!-- Form -->
                         <div class="mb-3">
-                            <label for="password_confirmation">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm">{{ __('Confirm Password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon3">
                                     <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
@@ -79,7 +79,7 @@
                                     </svg>
                                 </span>
                                 <input name="password_confirmation" type="password" placeholder="{{ __('Confirm Password') }}"
-                                    class="form-control" id="password_confirmation" required>
+                                    class="form-control" id="password-confirm" required autocomplete="new-password">
                             </div>
                         </div>
                         <!-- End of Form -->

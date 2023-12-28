@@ -24,7 +24,7 @@
                                     </svg>
                                 </span>
                                 <input name="email" type="email" class="form-control" placeholder="{{ __('Email') }}"
-                                    id="email" value="{{ old('email') }}" required autofocus>
+                                    id="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                             </div>
                             @error('email')
                                 <div class="invalid-feedback"> {{ $message }} </div>
@@ -46,7 +46,7 @@
                                         </svg>
                                     </span>
                                     <input name="password" type="password" placeholder="{{ __('Password') }}"
-                                        class="form-control" id="password" required>
+                                        class="form-control" id="password" required autocomplete="current-password">
                                 </div>
                                 @error('password')
                                     <div class="invalid-feedback"> {{ $message }} </div>
@@ -55,7 +55,7 @@
                             <!-- End of Form -->
                             <div class="d-flex justify-content-between align-items-top mb-4">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember">
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                                     <label class="form-check-label mb-0" for="remember">
                                         {{ __('Remember me') }}
                                     </label>

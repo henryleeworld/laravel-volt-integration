@@ -44,7 +44,7 @@
                                     </svg>
                                 </span>
                                 <input name='email' type="email" class="form-control" id="email"
-                                    placeholder="{{ __('Email') }}" required autofocus>
+                                    placeholder="{{ __('Email') }}" required autocomplete="email" autofocus>
                             </div>
                             @error('email') <div class="invalid-feedback">{{ $message }}</div> @enderror
                         </div>

@@ -38,8 +38,7 @@
 
                                 </span>
                                 <input name="email" type="email" class="form-control" placeholder="{{ __('Email') }}"
-                                    id="email" value="{{ $email ?? old('email') }}" autocomplete="email" required
-                                    autofocus>
+                                    id="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
                             </div>
                             @error('email') <div class="invalid-feedback"> {{ $message }} </div> @enderror
                         </div>
@@ -59,14 +58,14 @@
 
                                 </span>
                                 <input name="password" type="password" placeholder="{{ __('Password') }}"
-                                    class="form-control" id="password" required>
+                                    class="form-control" id="password" required autocomplete="new-password">
                             </div>
                             @error('password') <div class="invalid-feedback"> {{ $message }} </div> @enderror
                         </div>
                         <!-- End of Form -->
                         <!-- Form -->
                         <div class="mb-3">
-                            <label for="password_confirmation">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm">{{ __('Confirm Password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon3">
                                     <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
@@ -80,7 +79,7 @@
                                 </span>
                                 <input name="password_confirmation" type="password"
                                     placeholder="{{ __('Confirm Password') }}" class="form-control"
-                                    id="password_confirmation" required>
+                                    id="password-confirm" required autocomplete="new-password">
                             </div>
                         </div>
                         <!-- End of Form -->
